@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'; //to link to certain URL
 import axios from 'axios';
 import DatePicker from 'react-datepicker'; //import datepicker
 import "react-datepicker/dist/react-datepicker.css"; //import datepicker styling
@@ -127,7 +128,8 @@ export default class EditExpense extends Component {
                         <input 
                         type="submit"
                         value="Edit Expense"
-                        className="btn btn-primary" />
+                        className="btn btn-primary mr-2" />
+                        <Link to="/expenses" type="button" className="btn btn-secondary">Cancel</Link>
                     </div>
                 </form>
             </div>
