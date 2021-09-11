@@ -9,8 +9,8 @@ const Tuition = props => (
         <td>${props.tuit.price}</td>
         <td>{props.tuit.duedate.substring(0,10)}</td>
         <td>
-            <Link to={"/tuition/edit/"+props.tuit._id} type="button" className="btn btn-outline-primary col-3">edit</Link> &ensp; 
-            <button type="button" className="btn btn-outline-danger col-3" href="" onClick={() => { props.deleteTuition(props.tuit._id) }}>delete</button>
+            <Link to={"/tuition/edit/"+props.tuit._id} type="button" className="btn btn-outline-primary col-lg-12">Edit</Link> 
+            <button type="button" className="btn btn-outline-danger col-lg-12 mt-1" href="" onClick={() => { props.deleteTuition(props.tuit._id) }}>Delete</button>
         </td>
     </tr>
 )
