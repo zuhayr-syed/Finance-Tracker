@@ -12,4 +12,4 @@ const tuitionSchema = new Schema({
 
 const Tuition = mongoose.model('Tuition', tuitionSchema);
 
-module.exports = Tuition;
+module.exports = Tuition; 

@@ -7,7 +7,7 @@ router.route('/').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err)); //if error, return error
 });
 //second endpoint
-router.route('/add').post((req, res) => { //add entry
+router.route('/add').post((req, res) => { //add entry 
     const title = req.body.title;
     const price = Number(req.body.price);
     const duedate = Date.parse(req.body.duedate);

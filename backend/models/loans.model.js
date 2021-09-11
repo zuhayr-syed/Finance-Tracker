@@ -11,6 +11,6 @@ const loansSchema = new Schema({
     timestamps: true,
 });
 
-const Loans = mongoose.model('Loans', loansSchema);
+const Loans = mongoose.model('Loans', loansSchema); 
 
 module.exports = Loans;

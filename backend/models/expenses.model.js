@@ -11,6 +11,6 @@ const expensesSchema = new Schema({
     timestamps: true, 
 });
 
-const Expenses = mongoose.model('Expenses', expensesSchema);
+const Expenses = mongoose.model('Expenses', expensesSchema); 
 
 module.exports = Expenses;
