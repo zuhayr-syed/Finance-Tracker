@@ -57,26 +57,28 @@ export default class LoansList extends Component {
 
     render() {
         return (
-            <div className="bg-light text-dark p-3">
-                <head>
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
-                </head>
-                <h3>Your Loans</h3>
-                <table className ="table">
-                    <thead className="thead-dark">
-                        <tr>
-                            <th>Title</th>
-                            <th>Price</th>
-                            <th>Duedate</th>
-                            <th>Interest</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        { this.loansList() }
-                    </tbody>
-                </table>
-                <Link to="/loans/create" type="button" className="btn btn-secondary">Add A Loan</Link>
+            <div className="pb-5">
+                <div className="bg-light text-dark p-3">
+                    <head>
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+                    </head>
+                    <h3>Your Loans</h3>
+                    <table className ="table">
+                        <thead className="thead-dark">
+                            <tr>
+                                <th>Title</th>
+                                <th>Price</th>
+                                <th>Duedate</th>
+                                <th>Interest</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            { this.loansList() }
+                        </tbody>
+                    </table>
+                    <Link to="/loans/create" type="button" className="btn btn-secondary">Add A Loan</Link>
+                </div>
             </div>
         )
     }
