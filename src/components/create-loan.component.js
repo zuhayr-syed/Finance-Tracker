@@ -3,7 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker'; //import datepicker
 import "react-datepicker/dist/react-datepicker.css"; //import datepicker styling
 
-export default class CreateExpense extends Component {
+export default class CreateLoans extends Component {
     constructor(props){
         super(props);
 
@@ -115,7 +115,7 @@ export default class CreateExpense extends Component {
                     <div className="form-group">
                         <input 
                         type="submit"
-                        value="Add Expense"
+                        value="Add Loan"
                         className="btn btn-primary" />
                     </div>
                 </form>
