@@ -13,7 +13,7 @@ router.route('/add').post((req, res) => { //add entry
     const duedate = Date.parse(req.body.duedate);
     const interest = req.body.interest;
 
-    const newLoans = new Loans({
+    const newLoans = new Loans({ 
         title,
         price,
         duedate,
