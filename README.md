@@ -1,6 +1,6 @@
-# MERN Finance Tracker
+# Finance Tracker
 
-## JavaScript & MERN Stack 
+### JavaScript and MERN Stack 
 
 • To track personal finances  
 
